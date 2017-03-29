@@ -1,10 +1,9 @@
-<!--David Marí Beltrán-->
 <!DOCTYPE html>
 <html lang="en-US">
    <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width" />
-      <title>DMB - ASISTENTE PARA ADMINISTRAR SUS PELICULAS Y SERIES</title>
+      <title>DMB - CARACTERISTICAS DE LA WEB</title>
       <link rel="stylesheet" href="css/components.css">
       <link rel="stylesheet" href="css/responsee.css">
       <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
@@ -22,46 +21,46 @@
       <![endif]-->
    </head>
    <body class="size-1140">
-      <!-- Barra Superior -->
+      <!-- Barra de navegacion -->  
       <header>
          <nav>
             <div class="line">
                <div class="top-nav">              
                   <div class="logo hide-l">
-                   <br /><strong></strong></a>
+                     <a><br/><strong></strong></a>
                   </div>                  
                   <p class="nav-text"></p>
                   <div class="top-nav s-12 l-5">
                      <ul class="right top-ul chevron">
-                        <li><a href="../AppWebBBDD/index.html">INICIO</a>
+                        <li><a href="../AppWebBBDD/index.php">Inicio</a>
                         </li>
-                        <li><a>MIS SERIES</a>
+                        <li><a>Mis Series</a>
                         </li>
-                        <li><a>MIS PELICULAS</a>
+                        <li><a>Mis Peliculas</a>
                         </li>
                      </ul>
                   </div>
                   <ul class="s-12 l-2">
                      <li class="logo hide-s hide-m">
-                        <a href="../AppWebBBDD/index.html"><strong>DMB</strong><br/></a>
+                        <a href="../AppWebBBDD/index.php"><strong>DMB</strong> <br/></a>
                      </li>
                   </ul>
                   <div class="top-nav s-12 l-5">
                      <ul class="top-ul chevron">
-                        <li><a href="../AppWebBBDD/catalog.html">Catalogo</a>
+                        <li><a>Catalogo</a>
                         </li>
                         <li>
                            <a>BBDD</a>			    
                            <ul>
-                              <li><a>Crear una lista</a>
+                              <li><a>Crear una Lista</a>
                               </li>
-                              <li><a>Borrar una lista</a>
+                              <li><a>Borrar una Lista</a>
                               </li>
-                              <li><a href="../AppWebBBDD/caracteristics.html">Caracteristicas</a>
+                              <li><a href="../AppWebBBDD/caracteristics.php">Caracteristicas</a>
                               </li>
                            </ul>
                         </li>
-                        <li><a href="../AppWebBBDD/contact.html">CONTACTO</a>
+                        <li><a href="../AppWebBBDD/contact.php">CONTACTO</a>
                         </li>
                      </ul> 
                   </div>
@@ -70,103 +69,66 @@
          </nav>
       </header>
       <section>
-         <!-- CAROUSEL -->  	
-         <div id="carousel">
-            <div id="owl-demo" class="owl-carousel owl-theme">
-               <div class="item">
-                  <img src="img/Breaking-Bad.jpg" alt="">      
-                  <div class="carousel-text">
-                     <div class="line">
-                        <div class="s-12 l-9">
-                           <h2>Pagina construida bajo Responsive framework</h2>
-                        </div>
-                        <div class="s-12 l-9">
-                           <p>Hecha para la asignatura de BBDD.
-                           </p>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="item">
-                  <img src="img/Stranger-Things.jpg" alt="">      
-                  <div class="carousel-text">
-                     <div class="line">
-                        <div class="s-12 l-9">
-                           <h2>Proximamente un Catalogo</h2>
-                        </div>
-                        <div class="s-12 l-9">
-                           <p>Donde podras añadir series y peliculas a tu lista con un simple click.
-                           </p>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="item">
-                  <img src="img/Santa-Clarita-Diet.jpg" alt="">      
-                  <div class="carousel-text">
-                     <div class="line">
-                        <div class="s-12 l-9">
-                           <h2>Base de Datos alojada en AWS</h2>
-                        </div>
-                        <div class="s-12 l-9">
-                           <p>Para tener una conectividad funcional y rapida.
-                           </p>
-                        </div>
-                     </div>
-                  </div>
-               </div>
+         <div id="head">
+            <div class="line">
+               <h1>Pagina web basada en responsive</h1>
             </div>
          </div>
-         <!-- Primer Bloque --> 	
-         <div id="first-block">
+         <div id="content">
             <div class="line">
-               <h2>Sobre esta Pagina</h2>
-               <p class="subtitile">
-               </p>
                <div class="margin">
-                  <div class="s-12 m-6 l-3 margin-bottom">
-                     <i class="icon-paperplane_ico icon2x"></i>
-                     <h3>Acerca de</h3>
-                     <p>Esta pagina esta construida mediante responsive, y esta realizada para la aignatura de BBDD.
-                     </p>
+                  <div class="s-12 m-6 l-4">
+                     <div class="content-block margin-bottom">
+                        <i class="icon-paperplane_ico icon2x"></i>
+                        <h3>Ligera</h3>
+                        <p>
+                        </p>
+                     </div>
                   </div>
-                  <div class="s-12 m-6 l-3 margin-bottom">
-                     <i class="icon-star icon2x"></i>
-                     <h3>Compañía</h3>
-                     <p>Esta pagina está realizada por David Marí, alumno de 1º de DAM en Florida Universitaria.
-                     </p>
+                  <div class="s-12 m-6 l-4">
+                     <div class="content-block margin-bottom">
+                        <i class="icon-display_screen icon2x"></i>
+                        <h3>Responsive</h3>
+                        <p>
+                        </p>
+                     </div>
                   </div>
-                  <div class="s-12 m-6 l-3 margin-bottom">
-                     <i class="icon-message icon2x"></i>
-                     <h3>Servicios</h3>
-                     <p>El objetivo de esta pagina es poder tener una organización diferente a las que ya hay.
-                     </p>
+                  <div class="s-12 m-6 l-4">
+                     <div class="content-block margin-bottom">
+                        <i class="icon-heart icon2x"></i>
+                        <h3>Intuitiva</h3>
+                        <p>
+                        </p>
+                     </div>
                   </div>
-                  <div class="s-12 m-6 l-3 margin-bottom">
-                     <i class="icon-mail icon2x"></i>
-                     <h3>Contacto</h3>
-                     <p>Puedes ponerte en contacto para realizar sugerencias y/o reportar bugs que hayan en la pagina mediante 
-                        la pagina de contacto a la cual se accede mediante el menu superior.
-                     </p>
+                  <div class="s-12 m-6 l-4">
+                     <div class="content-block margin-bottom">
+                        <i class="icon-attachment icon2x"></i>
+                        <h3>Util</h3>
+                        <p>
+                        </p>
+                     </div>
+                  </div>
+                  <div class="s-12 m-6 l-4">
+                     <div class="content-block margin-bottom">
+                        <i class="icon-reorder icon2x"></i>
+                        <h3>Navegacion Responsive</h3>
+                        <p>
+                        </p>
+                     </div>
+                  </div>
+                  <div class="s-12 m-6 l-4">
+                     <div class="content-block margin-bottom">
+                        <i class="icon-mail icon2x"></i>
+                        <h3>Componentes Responsive</h3>
+                        <p>
+                        </p>
+                     </div>
                   </div>
                </div>
             </div>
          </div>
-         <!-- Segundo Bloque --> 	
-         <div id="second-block">
-            <div class="line">
-               <div class="margin-bottom">
-                  <div class="margin">
-                     <article class="s-12 l-8 center">
-                        <h1>Amazing title</h1>
-                        <p class="margin-bottom">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-                        </p>			
-                     </article>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <!-- Galeria --> 	
+         <!-- GALLERY -->	
          <div id="third-block">
             <div class="line">
                <h2>Catalogo Responsive</h2>
@@ -174,22 +136,22 @@
                </p>
                <div class="margin">
                   <div class="s-12 m-6 l-3">
-                     <img src="img/Breaking-Bad.jpg" alt="alternative text">      
+                     <img src="img/Breaking-Bad.jpg">      
                      <p class="subtitile">Galardona serie que cuenta la entrada al mundo de las drogas de Walter White.
                      </p>
                   </div>
                   <div class="s-12 m-6 l-3">
-                     <img src="img/Death-Note.jpg" alt="alternative text">      
+                     <img src="img/Death-Note.jpg">      
                      <p class="subtitile">Anime que se basa en un cuaderno que causa la muerte de la persona cuyo nombre se escribe en el.
                      </p>
                   </div>
                   <div class="s-12 m-6 l-3">
-                     <img src="img/Santa-Clarita-Diet.jpg" alt="alternative text">      
+                     <img src="img/Santa-Clarita-Diet.jpg">      
                      <p class="subtitile">Historia sobre una familia cuya madre necesita comer cuerpos humanos.
                      </p>
                   </div>
                   <div class="s-12 m-6 l-3">
-                     <img src="img/Stranger-Things.jpg" alt="alternative text">      
+                     <img src="img/Stranger-Things.jpg">      
                      <p class="subtitile">Cuenta la desaparición de Will Myers en esta serie sobre extraños sucesos.
                      </p>
                   </div>
@@ -208,7 +170,6 @@
                   <div class="item">
                      <h2>Contenido Legal</h2>
                      <p class="s-12 m-12 l-8 center">Esta pagina tan solo realiza un seguimiento de las Series y Peliculas que tu indiques, pero no incluye ningún link a ninguna pagina eterna o archivo e video para visualizar este contenido de manera ilegal.
-                     </p>
                   </div>
                </div>
             </div>

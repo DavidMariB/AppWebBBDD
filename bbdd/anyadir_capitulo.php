@@ -10,7 +10,7 @@
 
 <div id="Layer1">
 <p align="center" class="Estilo1">Formulario para a&ntilde;adir un capitulo a una Serie </p>
-  <form class="myform" id="form1" name="form1" method="post" action="insertarcapitulos.php">
+  <form class="myform" id="form1" name="form1" method="post" action="">
    <p>
       <label for="textfield">Nombre</label>
       <input type="text" name="nom" id="nom" />

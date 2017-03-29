@@ -32,7 +32,7 @@
                   <p class="nav-text"></p>
                   <div class="top-nav s-12 l-5">
                      <ul class="right top-ul chevron">
-                        <li><a href="../AppWebBBDD/index.html">Inicio</a>
+                        <li><a href="../AppWebBBDD/index.php">Inicio</a>
                         </li>
                         <li><a>Mis Series</a>
                         </li>
@@ -42,12 +42,12 @@
                   </div>
                   <ul class="s-12 l-2">
                      <li class="logo hide-s hide-m">
-                        <a href="../AppWebBBDD/index.html"><strong>DMB</strong><br/></a>
+                        <a href="../AppWebBBDD/index.php"><strong>DMB</strong><br/></a>
                      </li>
                   </ul>
                   <div class="top-nav s-12 l-5">
                      <ul class="top-ul chevron">
-                        <li><a href="../AppWebBBDD/catalog.html">Catalogo</a>
+                        <li><a href="../AppWebBBDD/catalog.php">Catalogo</a>
                         </li>
                         <li>
                            <a>BBDD</a>			    
@@ -56,11 +56,11 @@
                               </li>
                               <li><a>Borrar una lista</a>
                               </li>
-                              <li><a href="../AppWebBBDD/caracteristics.html">Caracteristicas</a>
+                              <li><a href="../AppWebBBDD/caracteristics.php">Caracteristicas</a>
                               </li>
                            </ul>
                         </li>
-                        <li><a href="../AppWebBBDD/contact.html">Contacto</a>
+                        <li><a href="../AppWebBBDD/contact.php">Contacto</a>
                         </li>
                      </ul> 
                   </div>

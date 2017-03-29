@@ -3,7 +3,7 @@
    <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width" />
-      <title>DMB - CARACTERISTICAS DE LA WEB</title>
+      <title>DMB - PAGINA DE CONTACTO</title>
       <link rel="stylesheet" href="css/components.css">
       <link rel="stylesheet" href="css/responsee.css">
       <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
@@ -21,28 +21,28 @@
       <![endif]-->
    </head>
    <body class="size-1140">
-      <!-- Barra de navegacion -->  
+      <!-- Barar de Navegacion -->  
       <header>
          <nav>
             <div class="line">
                <div class="top-nav">              
                   <div class="logo hide-l">
-                     <a><br/><strong></strong></a>
+                     <a href="../design/"> <br /><strong></strong></a>
                   </div>                  
                   <p class="nav-text"></p>
                   <div class="top-nav s-12 l-5">
                      <ul class="right top-ul chevron">
-                        <li><a href="../AppWebBBDD/index.html">Inicio</a>
+                        <li><a href="../AppWebBBDD/index.php">INICIO</a>
                         </li>
-                        <li><a>Mis Series</a>
+                        <li><a>MIS SERIES</a>
                         </li>
-                        <li><a>Mis Peliculas</a>
+                        <li><a>MIS PELICULAS</a>
                         </li>
                      </ul>
                   </div>
                   <ul class="s-12 l-2">
                      <li class="logo hide-s hide-m">
-                        <a href="../AppWebBBDD/index.html"><strong>DMB</strong> <br/></a>
+                        <a href="../AppWebBBDD/index.php"><strong>DMB</strong><br/></a>
                      </li>
                   </ul>
                   <div class="top-nav s-12 l-5">
@@ -56,11 +56,11 @@
                               </li>
                               <li><a>Borrar una Lista</a>
                               </li>
-                              <li><a href="../AppWebBBDD/caracteristics.html">Caracteristicas</a>
+                              <li><a href="../AppWebBBDD/caracteristics.php">Caracteristicas</a>
                               </li>
                            </ul>
                         </li>
-                        <li><a href="../AppWebBBDD/contact.html">CONTACTO</a>
+                        <li><a href="../AppWebBBDD/contact.php">CONTACTO</a>
                         </li>
                      </ul> 
                   </div>
@@ -71,89 +71,32 @@
       <section>
          <div id="head">
             <div class="line">
-               <h1>Pagina web basada en responsive</h1>
+               <h1>PÁGINA DE CONTACTO</h1>
             </div>
          </div>
-         <div id="content">
+         <div id="content" class="left-align contact-page">
             <div class="line">
                <div class="margin">
-                  <div class="s-12 m-6 l-4">
-                     <div class="content-block margin-bottom">
-                        <i class="icon-paperplane_ico icon2x"></i>
-                        <h3>Ligera</h3>
-                        <p>
-                        </p>
-                     </div>
+                  <div class="s-12 l-6">
+                     <h2>Detalles de Contacto</h2>
+                     <address>
+                        <p><i class="icon-home icon"></i> Florida Universitaria, Catarroja</p>
+                        <p><i class="icon-globe_black icon"></i> Valencia - España</p>
+                        <p><i class="icon-mail icon"></i> decdam@mail.com</p>
+                     </address>
+                     <br />
+                     <h2>Redes Sociales</h2>
+                     <p><i class="icon-facebook icon"></i> DecDam</a></p>
+                     <p><i class="icon-twitter icon"></i> @DecDam</a></p>
                   </div>
-                  <div class="s-12 m-6 l-4">
-                     <div class="content-block margin-bottom">
-                        <i class="icon-display_screen icon2x"></i>
-                        <h3>Responsive</h3>
-                        <p>
-                        </p>
-                     </div>
-                  </div>
-                  <div class="s-12 m-6 l-4">
-                     <div class="content-block margin-bottom">
-                        <i class="icon-heart icon2x"></i>
-                        <h3>Intuitiva</h3>
-                        <p>
-                        </p>
-                     </div>
-                  </div>
-                  <div class="s-12 m-6 l-4">
-                     <div class="content-block margin-bottom">
-                        <i class="icon-attachment icon2x"></i>
-                        <h3>Util</h3>
-                        <p>
-                        </p>
-                     </div>
-                  </div>
-                  <div class="s-12 m-6 l-4">
-                     <div class="content-block margin-bottom">
-                        <i class="icon-reorder icon2x"></i>
-                        <h3>Navegacion Responsive</h3>
-                        <p>
-                        </p>
-                     </div>
-                  </div>
-                  <div class="s-12 m-6 l-4">
-                     <div class="content-block margin-bottom">
-                        <i class="icon-mail icon2x"></i>
-                        <h3>Componentes Responsive</h3>
-                        <p>
-                        </p>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <!-- GALLERY -->	
-         <div id="third-block">
-            <div class="line">
-               <h2>Catalogo Responsive</h2>
-               <p class="subtitile">Para una mayor comodidad al seleccionar tus series y peliculas.
-               </p>
-               <div class="margin">
-                  <div class="s-12 m-6 l-3">
-                     <img src="img/Breaking-Bad.jpg">      
-                     <p class="subtitile">Galardona serie que cuenta la entrada al mundo de las drogas de Walter White.
-                     </p>
-                  </div>
-                  <div class="s-12 m-6 l-3">
-                     <img src="img/Death-Note.jpg">      
-                     <p class="subtitile">Anime que se basa en un cuaderno que causa la muerte de la persona cuyo nombre se escribe en el.
-                     </p>
-                  </div>
-                  <div class="s-12 m-6 l-3">
-                     <img src="img/Santa-Clarita-Diet.jpg">      
-                     <p class="subtitile">Historia sobre una familia cuya madre necesita comer cuerpos humanos.
-                     </p>
-                  </div>
-                  <div class="s-12 m-6 l-3">
-                     <img src="img/Stranger-Things.jpg">      
-                     <p class="subtitile">Cuenta la desaparición de Will Myers en esta serie sobre extraños sucesos.
-                     </p>
+                  <div class="s-12 l-6">
+                     <h2>Formulario de contacto (no funcional)</h2>
+                     <form class="customform" action="">
+                        <div class="s-12 l-7"><input name="" placeholder="Correo" title="Your e-mail" type="text" /></div>
+                        <div class="s-12 l-7"><input name="" placeholder="Nombre" title="Your name" type="text" /></div>
+                        <div class="s-12"><textarea placeholder="Mensaje" name="" rows="5"></textarea></div>
+                        <div class="s-12 m-6 l-4"><button type="submit">Enviar</button></div>
+                     </form>
                   </div>
                </div>
             </div>
@@ -170,6 +113,7 @@
                   <div class="item">
                      <h2>Contenido Legal</h2>
                      <p class="s-12 m-12 l-8 center">Esta pagina tan solo realiza un seguimiento de las Series y Peliculas que tu indiques, pero no incluye ningún link a ninguna pagina eterna o archivo e video para visualizar este contenido de manera ilegal.
+                     </p>
                   </div>
                </div>
             </div>
