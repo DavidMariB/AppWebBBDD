@@ -35,9 +35,9 @@
                      <ul class="right top-ul chevron">
                         <li><a href="../AppWebBBDD/index.php">INICIO</a>
                         </li>
-                        <li><a>MIS SERIES</a>
+                        <li><a href="../AppWebBBDD/bbdd/anyadir_serie.php">MIS SERIES</a>
                         </li>
-                        <li><a>MIS PELICULAS</a>
+                        <li><a href="../AppWebBBDD/bbdd/anyadir_pelicula.php">MIS PELICULAS</a>
                         </li>
                      </ul>
                   </div>
@@ -57,7 +57,9 @@
                               </li>
                               <li><a href="../AppWebBBDD/bbdd/eliminarBD.php">Borrar Base de Datos</a>
                               </li>
-                              <li><a href="../AppWebBBDD/bbdd/crearTablas.php">Crear una lista</a>
+                              <li><a href="../AppWebBBDD/bbdd/crearTablasBD.php">Crear una lista</a>
+                              </li>
+                              <li><a href="../AppWebBBDD/bbdd/eliminarTablasBD.php"> Eliminar una lista </a>
                               </li>
                               <li><a href="../AppWebBBDD/caracteristics.php">Caracteristicas</a>
                               </li>

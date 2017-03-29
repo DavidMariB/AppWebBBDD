@@ -52,9 +52,13 @@
                         <li>
                            <a>BBDD</a>			    
                            <ul>
-                              <li><a>Crear una lista</a>
+                              <li><a href="../AppWebBBDD/bbdd/crearBD.php">Crear Base de Datos</a>
                               </li>
-                              <li><a>Borrar una lista</a>
+                              <li><a href="../AppWebBBDD/bbdd/eliminarBD.php">Borrar Base de Datos</a>
+                              </li>
+                              <li><a href="../AppWebBBDD/bbdd/crearTablasBD.php">Crear una lista</a>
+                              </li>
+                              <li><a href="../AppWebBBDD/bbdd/eliminarTablasBD.php">Borrar una lista</a>
                               </li>
                               <li><a href="../AppWebBBDD/caracteristics.php">Caracteristicas</a>
                               </li>

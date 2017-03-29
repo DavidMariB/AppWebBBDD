@@ -2,8 +2,8 @@
 
 //Definimos las variables para poder conectarnos a la BD
  $servidor ="localhost";
- $usuario = "admin";
- $clave ="adminwebservices";
+ $usuario = "root";
+ $clave ="";
  //Nos conectamos con las variables creadas anteriormente
  $conectado = @mysqli_connect ($servidor,$usuario,$clave);
 
@@ -13,6 +13,6 @@
 }
 
 //Ponemos en uso la base de datos
-mysqli_select_db ("DMB", $conectado);
+mysqli_select_db ($conectado, "DMB");
 
 ?>

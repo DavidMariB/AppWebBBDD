@@ -47,14 +47,18 @@
                   </ul>
                   <div class="top-nav s-12 l-5">
                      <ul class="top-ul chevron">
-                        <li><a>Catalogo</a>
+                        <li><a href="../AppWebBBDD/catalog.php">Catalogo</a>
                         </li>
                         <li>
                            <a>BBDD</a>			    
                            <ul>
-                              <li><a>Crear una Lista</a>
+                              <li><a href="../AppWebBBDD/bbdd/crearBD.php">Crear Base de Datos</a>
                               </li>
-                              <li><a>Borrar una Lista</a>
+                              <li><a href="../AppWebBBDD/bbdd/eliminarBD.php">Borrar Base de Datos</a>
+                              </li>
+                              <li><a href="../AppWebBBDD/bbdd/crearTablasBD.php">Crear una Lista</a>
+                              </li>
+                              <li><a href="../AppWebBBDD/bbdd/eliminarTablasBD.php">Borrar una Lista</a>
                               </li>
                               <li><a href="../AppWebBBDD/caracteristics.php">Caracteristicas</a>
                               </li>
