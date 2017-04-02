@@ -9,6 +9,7 @@
 	$consulta.="nombre CHAR(45) NOT NULL, ";
 	$consulta.="director CHAR(45), ";
 	$consulta.="lanzamiento DATE, ";
+	$consulta.="temporadas INT NOT NULL, ";
 	$consulta.="PRIMARY KEY (id_serie));";
 
 	//Ejecutamos la consulta para SERIES
@@ -39,5 +40,7 @@
 	$ejecutarConsulta=mysqli_query ($conectado, $consulta);
 
 	echo("La lista ha sido creada correctamente");
-	echo "<a href=../index.php> Volver </a>";
+	echo("Ahora seras redireccionado automaticamente");
+
+	header ("Location: ../index.php");
 ?>

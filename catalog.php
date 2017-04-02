@@ -52,19 +52,19 @@
                         <li>
                            <a>BBDD</a>			    
                            <ul>
-                              <li><a href="../AppWebBBDD/bbdd/crearBD.php">Crear Base de Datos</a>
+                              <li><a href="bbdd/crearBD.php">Crear Base de Datos</a>
                               </li>
-                              <li><a href="../AppWebBBDD/bbdd/eliminarBD.php">Borrar Base de Datos</a>
+                              <li><a href="bbdd/eliminarBD.php">Borrar Base de Datos</a>
                               </li>
-                              <li><a href="../AppWebBBDD/bbdd/crearTablasBD.php">Crear una lista</a>
+                              <li><a href="bbdd/crearTablasBD.php">Crear una lista</a>
                               </li>
-                              <li><a href="../AppWebBBDD/bbdd/eliminarTablasBD.php">Borrar una lista</a>
+                              <li><a href="bbdd/eliminarTablasBD.php">Borrar una lista</a>
                               </li>
-                              <li><a href="../AppWebBBDD/caracteristics.php">Caracteristicas</a>
+                              <li><a href="caracteristics.php">Caracteristicas</a>
                               </li>
                            </ul>
                         </li>
-                        <li><a href="../AppWebBBDD/contact.php">Contacto</a>
+                        <li><a href="contact.php">Contacto</a>
                         </li>
                      </ul> 
                   </div>

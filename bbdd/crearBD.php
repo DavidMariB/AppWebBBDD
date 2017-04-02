@@ -22,5 +22,7 @@ $ejecutarConsulta=mysqli_query ($conectado, $consulta);
   $hacerConsulta = mysqli_query($conectado, $consulta);
   echo("¡Base de Datos creada correctamente!");
   
-  echo "<a href=../index.php> Volver </a>";
+  echo("Ahora seras redireccionado automaticamente");
+
+  header ("Location: ../AppWebBBDD/index.php");
 ?>

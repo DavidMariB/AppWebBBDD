@@ -5,5 +5,5 @@
 	$consulta="DELETE * FROM series; ";
 	$consulta="DELETE * FROM capitulo;";
 
-	echo("Lista eliminada satisfactoriamente")
+	echo("Lista eliminada satisfactoriamente");
 ?>
