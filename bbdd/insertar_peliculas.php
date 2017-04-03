@@ -11,5 +11,5 @@ if (!mysqli_query($conectar, $insertar)){
 
 echo("Pelicula añadida correctamente. Ahora seras redireccionado a la pagina principal");
 
-header("Location: ../index.php")
+header("Location: ../index.php");
 ?>

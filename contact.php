@@ -34,9 +34,23 @@
                      <ul class="right top-ul chevron">
                         <li><a href="../AppWebBBDD/index.php">INICIO</a>
                         </li>
-                        <li><a>MIS SERIES</a>
+                        <li>
+                           <a>Series</a>          
+                           <ul>
+                              <li><a>Mis Series</a>
+                              </li>
+                              <li><a href="bbdd/anyadir_serie.php">Añadir una serie</a>
+                              </li>
+                           </ul>
                         </li>
-                        <li><a>MIS PELICULAS</a>
+                        <li>
+                           <a>Peliculas</a>          
+                           <ul>
+                              <li><a>Mis Peliculas</a>
+                              </li>
+                              <li><a href="bbdd/anyadir_pelicula.php">Añadir una Pelicula</a>
+                              </li>
+                           </ul>
                         </li>
                      </ul>
                   </div>
@@ -52,19 +66,19 @@
                         <li>
                            <a>BBDD</a>			    
                            <ul>
-                              <li><a href="../AppWebBBDD/bbdd/crearBD.php">Crear Base de Datos</a>
+                              <li><a href="bbdd/crearBD.php">Crear Base de Datos</a>
                               </li>
-                              <li><a href="../AppWebBBDD/bbdd/eliminarBD.php">Borrar Base de Datos</a>
+                              <li><a href="bbdd/eliminarBD.php">Borrar Base de Datos</a>
                               </li>
-                              <li><a href="../AppWebBBDD/bbdd/crearTablasBD.php">Crear una Lista</a>
+                              <li><a href="bbdd/crearTablasBD.php">Crear una Lista</a>
                               </li>
-                              <li><a href="../AppWebBBDD/bbdd/eliminarTablasBD.php">Borrar una Lista</a>
+                              <li><a href="bbdd/eliminarTablasBD.php">Borrar una Lista</a>
                               </li>
-                              <li><a href="../AppWebBBDD/caracteristics.php">Caracteristicas</a>
+                              <li><a href="caracteristics.php">Caracteristicas</a>
                               </li>
                            </ul>
                         </li>
-                        <li><a href="../AppWebBBDD/contact.php">CONTACTO</a>
+                        <li><a href="contact.php">CONTACTO</a>
                         </li>
                      </ul> 
                   </div>

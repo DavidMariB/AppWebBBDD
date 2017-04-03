@@ -38,7 +38,7 @@
                         <li>
                            <a>Series</a>          
                            <ul>
-                              <li><a>Mis Series</a>
+                              <li><a href="bbdd/listado_series.php">Mis Series</a>
                               </li>
                               <li><a href="bbdd/anyadir_serie.php">Añadir una serie</a>
                               </li>

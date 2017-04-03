@@ -34,9 +34,23 @@
                      <ul class="right top-ul chevron">
                         <li><a href="../AppWebBBDD/index.php">Inicio</a>
                         </li>
-                        <li><a>Mis Series</a>
+                        <li>
+                           <a>Series</a>          
+                           <ul>
+                              <li><a href="bbdd/listado_series.php">Mis Series</a>
+                              </li>
+                              <li><a href="bbdd/anyadir_serie.php">Añadir una serie</a>
+                              </li>
+                           </ul>
                         </li>
-                        <li><a>Mis Peliculas</a>
+                        <li>
+                           <a>Peliculas</a>          
+                           <ul>
+                              <li><a>Mis Peliculas</a>
+                              </li>
+                              <li><a href="bbdd/anyadir_pelicula.php">Añadir una Pelicula</a>
+                              </li>
+                           </ul>
                         </li>
                      </ul>
                   </div>
