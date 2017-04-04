@@ -21,9 +21,5 @@ $consulta.=" PRIMARY KEY (id_usuario));";
 
 $ejecutarConsulta=mysqli_query($conectado, $consulta);
 
-  echo("¡Base de Datos creada correctamente!");
-  
-  echo("Ahora seras redireccionado automaticamente");
-
   header ("Location: ../index.php");
 ?>

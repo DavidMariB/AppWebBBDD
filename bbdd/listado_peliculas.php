@@ -62,7 +62,7 @@
                         <li>
                            <a>Peliculas</a>          
                            <ul>
-                              <li><a href="listado_peliculas.php">Mis Peliculas</a>
+                              <li><a>Mis Peliculas</a>
                               </li>
                               <li><a href="anyadir_pelicula.php">Añadir una Pelicula</a>
                               </li>
@@ -114,16 +114,16 @@
 
                $conectado = mysqli_connect("localhost","root","","dmb");
 
-               $select = "SELECT nombre, temporadas, lanzamiento FROM series";
+               $select = "SELECT nombre, director, estreno FROM peliculas";
                $result = mysqli_query($conectado, $select);
 
                if (mysqli_num_rows($result) > 0) {
                    // Mostramos los datos de cada columna
                    while($row = mysqli_fetch_assoc($result)) {
-                       echo $row["nombre"]. " - Temporadas: " . $row["temporadas"]. " - Estreno: " . $row["lanzamiento"]. "<br>";
+                       echo $row["nombre"]. " - Director: " . $row["director"]. " - Estreno: " . $row["estreno"]. "<br>";
                    }
                } else {
-                   echo "No has añadido series a tu lista";
+                   echo "No has añadido peliculas a tu lista";
                }
 
             ?>

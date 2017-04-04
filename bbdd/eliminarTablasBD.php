@@ -5,7 +5,5 @@
 	$consulta="DELETE * FROM series; ";
 	$consulta="DELETE * FROM capitulo;";
 
-	echo("Lista eliminada satisfactoriamente");
-
 	header ("Location: ./index.php");
 ?>

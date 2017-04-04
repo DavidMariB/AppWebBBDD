@@ -17,15 +17,18 @@
       <script type="text/javascript" src="js/modernizr.js"></script>
       <script type="text/javascript" src="js/responsee.js"></script>
 
-      <script language="Javascript"> 
-         function eliminarBBDD(){ 
+      <script type="text/javascript"> 
+         function eliminarBD(){ 
          confirmar=confirm("¿Seguro que quieres borrar la base de datos?"); 
-         if (confirmar)
+         if (confirmar){
          // si pulsamos en aceptar
-         alert();
-         else 
+         alert('La Base de Datos se borrara a continuacion');
+            document.location.href = "bbdd/eliminarBD.php";
+         }else {
          // si pulsamos en cancelar
-         alert('La Base de Datos no se borrara'); 
+         alert('La Base de Datos no se borrara');
+            return false;
+         } 
          } 
       </script>
 
@@ -82,7 +85,7 @@
                            <ul>
                               <li><a href="bbdd/crearBD.php">Crear Base de Datos</a>
                               </li>
-                              <li><a href="javascript:eliminarBBDD()">Borrar Base de Datos</a>
+                              <li><a href="javascript:eliminarBD()">Borrar Base de Datos</a>
                               </li>
                               <li><a href="bbdd/crearTablasBD.php">Crear una lista</a>
                               </li>
