@@ -93,33 +93,7 @@
             </div>
          </div>
          <div id="content">
-
-            <?php
-
-              $conectado = mysqli_connect("localhost","root","","dmb");
-              $query = "SELECT nombre,lanzamiento,temporadas FROM series;";
-              $resultado = mysqli_query($conectado,$query);
-
-              echo "
-                  <table>
-                    <tr>
-                      <th>Nombre</th>
-                      <th>Fecha de Estreno</th>
-                      <th>Temporadas</th>
-                    </tr>";
-
-              while($row = mysql_fetch_assoc($resultado))
-              {
-                  echo
-                      "<tr>",
-                      "<td>", $row['nombre'], "</td>", 
-                      "<td>", $row['lanzamiento'],"</td>", 
-                      "<td>", $row['temporadas'],"</td>", 
-                      "</tr>";
-              }
-
-              echo "</table>";
-          ?>
+            
          </div>
          <div id="fourth-block">
             <div class="line">

@@ -8,7 +8,7 @@
 	$consulta.="( id_serie INT NOT NULL AUTO_INCREMENT, ";
 	$consulta.="nombre CHAR(45) NOT NULL, ";
 	$consulta.="director CHAR(45), ";
-	$consulta.="lanzamiento DATE, ";
+	$consulta.="lanzamiento INT, ";
 	$consulta.="temporadas INT NOT NULL, ";
 	$consulta.="PRIMARY KEY (id_serie));";
 
@@ -21,7 +21,7 @@
 	$consulta.="nombre CHAR(45) NOT NULL, ";
 	$consulta.="temporada CHAR(45) NOT NULL, ";
 	$consulta.="duracion INT, ";
-	$consulta.="estreno DATE, ";
+	$consulta.="estreno INT, ";
 	$consulta.="serie_id INT NOT NULL, ";
 	$consulta.="PRIMARY KEY (id_capitulo), ";
 	$consulta.="FOREIGN KEY (serie_id) REFERENCES series(id_serie));";
@@ -34,7 +34,7 @@
 	$consulta.="( id_pelicula INT NOT NULL AUTO_INCREMENT, ";
 	$consulta.="nombre CHAR(45) NOT NULL, ";
 	$consulta.="director CHAR(45), ";
-	$consulta.="estreno DATE, ";
+	$consulta.="estreno INT, ";
 	$consulta.="PRIMARY KEY (id_pelicula));";
 	//Ejecutamos la consulta para PELICULAS
 	$ejecutarConsulta=mysqli_query ($conectado, $consulta);

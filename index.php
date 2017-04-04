@@ -15,7 +15,20 @@
       <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
       <script type="text/javascript" src="js/jquery-ui.min.js"></script>    
       <script type="text/javascript" src="js/modernizr.js"></script>
-      <script type="text/javascript" src="js/responsee.js"></script>   
+      <script type="text/javascript" src="js/responsee.js"></script>
+
+      <script language="Javascript"> 
+         function eliminarBBDD(){ 
+         confirmar=confirm("¿Seguro que quieres borrar la base de datos?"); 
+         if (confirmar)
+         // si pulsamos en aceptar
+         alert();
+         else 
+         // si pulsamos en cancelar
+         alert('La Base de Datos no se borrara'); 
+         } 
+      </script>
+
       <!--[if lt IE 9]>
 	      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
@@ -69,7 +82,7 @@
                            <ul>
                               <li><a href="bbdd/crearBD.php">Crear Base de Datos</a>
                               </li>
-                              <li><a href="bbdd/eliminarBD.php">Borrar Base de Datos</a>
+                              <li><a href="javascript:eliminarBBDD()">Borrar Base de Datos</a>
                               </li>
                               <li><a href="bbdd/crearTablasBD.php">Crear una lista</a>
                               </li>
@@ -124,7 +137,7 @@
                   <div class="carousel-text">
                      <div class="line">
                         <div class="s-12 l-9">
-                           <h2>Base de Datos alojada en AWS</h2>
+                           <h2>Base de Datos alojada en AWS (Proximamente)</h2>
                         </div>
                         <div class="s-12 l-9">
                            <p>Para tener una conectividad funcional y rapida.
