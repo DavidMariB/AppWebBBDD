@@ -31,6 +31,21 @@
          } 
       </script>
 
+      <script type="text/javascript"> 
+         function eliminarLista(){ 
+         confirmar=confirm("¿Seguro que quieres borrar tu lista?"); 
+         if (confirmar){
+         // si pulsamos en aceptar
+         alert('La Lista se borrara a continuacion');
+            document.location.href = "eliminarTablasBD.php";
+         }else {
+         // si pulsamos en cancelar
+         alert('La Lista no se borrara');
+            return false;
+         } 
+         } 
+      </script>
+
       <!--[if lt IE 9]>
 	      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
@@ -88,7 +103,7 @@
                               </li>
                               <li><a href="crearTablasBD.php">Crear una lista</a>
                               </li>
-                              <li><a href="eliminarTablasBD.php">Borrar una lista</a>
+                              <li><a href="javascript:eliminarLista()">Borrar una lista</a>
                               </li>
                               <li><a href="../caracteristics.php">Caracteristicas</a>
                               </li>

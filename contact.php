@@ -31,6 +31,21 @@
          } 
       </script>
 
+      <script type="text/javascript"> 
+         function eliminarLista(){ 
+         confirmar=confirm("¿Seguro que quieres borrar tu lista?"); 
+         if (confirmar){
+         // si pulsamos en aceptar
+         alert('La Lista se borrara a continuacion');
+            document.location.href = "bbdd/eliminarTablasBD.php";
+         }else {
+         // si pulsamos en cancelar
+         alert('La Lista no se borrara');
+            return false;
+         } 
+         } 
+      </script>
+
       <!--[if lt IE 9]>
 	      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
@@ -88,7 +103,7 @@
                               </li>
                               <li><a href="bbdd/crearTablasBD.php">Crear una Lista</a>
                               </li>
-                              <li><a href="bbdd/eliminarTablasBD.php">Borrar una Lista</a>
+                              <li><a href="javascript:eliminarLista()">Borrar una Lista</a>
                               </li>
                               <li><a href="caracteristics.php">Caracteristicas</a>
                               </li>
@@ -124,7 +139,7 @@
                      <p><i class="icon-twitter icon"></i> @DecDam</a></p>
                   </div>
                   <div class="s-12 l-6">
-                     <h2>Formulario de contacto (no funcional)</h2>
+                     <h2>Formulario de contacto (no funciona)</h2>
                      <form class="customform" action="">
                         <div class="s-12 l-7"><input name="" placeholder="Correo" title="Your e-mail" type="text" /></div>
                         <div class="s-12 l-7"><input name="" placeholder="Nombre" title="Your name" type="text" /></div>
