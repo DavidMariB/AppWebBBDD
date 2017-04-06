@@ -1,10 +1,10 @@
 <?php
 
-$conectado = @mysqli_connect("localhost","root","");
+require("conectarBD.php");
+
 $eliminarBD = "DROP DATABASE DMB ";
 
-$consulta = mysqli_query ($conectado, $eliminarBD);
-
+$consulta = mysqli_query ($conectar, $eliminarBD);
 
 header("Location: ../index.php");
 

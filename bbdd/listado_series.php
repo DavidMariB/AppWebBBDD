@@ -127,10 +127,10 @@
 
             <?php
 
-               $conectado = mysqli_connect("localhost","root","","dmb");
+               require("conectarBD.php");
 
                $select = "SELECT nombre, temporadas, lanzamiento FROM series";
-               $result = mysqli_query($conectado, $select);
+               $result = mysqli_query($conectar, $select);
 
                if (mysqli_num_rows($result) > 0) {
                    // Mostramos los datos de cada columna

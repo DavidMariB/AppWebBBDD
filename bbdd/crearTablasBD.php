@@ -1,7 +1,7 @@
 <?php
 
 	//Insertamos usarDB para poder conectarnos a la Base de Datos y ponerla en uso
-	require("usarBD.php");
+	require("conectarBD.php");
 	
 	//Creamos la consulta para crear la tabla series
 	$consulta="CREATE TABLE IF NOT EXISTS series ";
@@ -13,7 +13,7 @@
 	$consulta.="PRIMARY KEY (id_serie));";
 
 	//Ejecutamos la consulta para SERIES
-	$ejecutarConsulta=mysqli_query ($conectado, $consulta);
+	$ejecutarConsulta=mysqli_query ($conectar, $consulta);
 
 	//Creamos la consulta para crear la tabla capitulo
 	$consulta="CREATE TABLE IF NOT EXISTS capitulo ";
@@ -27,7 +27,7 @@
 	$consulta.="FOREIGN KEY (serie_id) REFERENCES series(id_serie));";
 
 	//Ejecutamos la consulta para CAPITULO
-	$ejecutarConsulta=mysqli_query ($conectado, $consulta);
+	$ejecutarConsulta=mysqli_query ($conectar, $consulta);
 
 	//Creamos la consulta para crear la tabla peliculas
 	$consulta="CREATE TABLE IF NOT EXISTS peliculas ";
@@ -37,7 +37,7 @@
 	$consulta.="estreno INT, ";
 	$consulta.="PRIMARY KEY (id_pelicula));";
 	//Ejecutamos la consulta para PELICULAS
-	$ejecutarConsulta=mysqli_query ($conectado, $consulta);
+	$ejecutarConsulta=mysqli_query ($conectar, $consulta);
 	
 
 	header ("Location: ../index.php");
