@@ -1,6 +1,6 @@
 <?php
 
-$conectar = mysqli_connect("localhost","root","","dmb");
+require("conectarBD.php");
 
 $insertar = "INSERT INTO peliculas (nombre, director, estreno) 
 			VALUES ('$_POST[nombre]', '$_POST[dir]', '$_POST[estreno]')";

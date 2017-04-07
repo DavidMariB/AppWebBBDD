@@ -1,6 +1,6 @@
 <?php
 
-$conectar = mysqli_connect("localhost","root","","dmb");
+require("conectarBD.php");
 
 $insertar = "INSERT INTO series (nombre, temporadas, lanzamiento) 
 			VALUES ('$_POST[nom]', '$_POST[temp]', '$_POST[est]')";

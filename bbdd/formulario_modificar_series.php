@@ -4,17 +4,17 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width" />
       <title>DMB - CATALOGO DE SERIES Y PELICULAS</title>
-      <link rel="stylesheet" href="css/components.css">
-      <link rel="stylesheet" href="css/responsee.css">
-      <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
-      <link rel="stylesheet" href="owl-carousel/owl.theme.css">
+      <link rel="stylesheet" href="../css/components.css">
+      <link rel="stylesheet" href="../css/responsee.css">
+      <link rel="stylesheet" href="../owl-carousel/owl.carousel.css">
+      <link rel="stylesheet" href="../owl-carousel/owl.theme.css">
       <!-- Personalizacion -->  
-      <link rel="stylesheet" href="css/template-style.css">
+      <link rel="stylesheet" href="../css/template-style.css">
       <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-      <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
-      <script type="text/javascript" src="js/jquery-ui.min.js"></script>    
-      <script type="text/javascript" src="js/modernizr.js"></script>
-      <script type="text/javascript" src="js/responsee.js"></script>
+      <script type="text/javascript" src="../js/jquery-1.8.3.min.js"></script>
+      <script type="text/javascript" src="../js/jquery-ui.min.js"></script>    
+      <script type="text/javascript" src="../js/modernizr.js"></script>
+      <script type="text/javascript" src="../js/responsee.js"></script>
 
       <script type="text/javascript"> 
          function eliminarBD(){ 
@@ -22,7 +22,7 @@
          if (confirmar){
          // si pulsamos en aceptar
          alert('La Base de Datos se borrara a continuacion');
-            document.location.href = "bbdd/eliminarBD.php";
+            document.location.href = "eliminarBD.php";
          }else {
          // si pulsamos en cancelar
          alert('La Base de Datos no se borrara');
@@ -37,7 +37,7 @@
          if (confirmar){
          // si pulsamos en aceptar
          alert('La Lista se borrara a continuacion');
-            document.location.href = "bbdd/eliminarTablasBD.php";
+            document.location.href = "eliminarTablasBD.php";
          }else {
          // si pulsamos en cancelar
          alert('La Lista no se borrara');
@@ -63,25 +63,25 @@
                   <p class="nav-text"></p>
                   <div class="top-nav s-12 l-5">
                      <ul class="right top-ul chevron">
-                        <li><a href="../AppWebBBDD/index.php">Inicio</a>
+                        <li><a href="../index.php">Inicio</a>
                         </li>
                         <li>
                            <a>Series</a>          
                            <ul>
-                              <li><a href="bbdd/listado_series.php">Mis Series</a>
+                              <li><a href="listado_series.php">Mis Series</a>
                               </li>
-                              <li><a href="bbdd/anyadir_serie.php">Añadir una serie</a>
+                              <li><a href="anyadir_serie.php">Añadir una serie</a>
                               </li>
-                              <li><a href="bbdd/formulario_modificar_series.php"> Modificar mis series</a>
+                              <li><a href="formulario_modificar_series.php"> Modificar mis series</a>
                               </li>
                            </ul>
                         </li>
                         <li>
                            <a>Peliculas</a>          
                            <ul>
-                              <li><a href="bbdd/listado_peliculas.php">Mis Peliculas</a>
+                              <li><a href="listado_peliculas.php">Mis Peliculas</a>
                               </li>
-                              <li><a href="bbdd/anyadir_pelicula.php">Añadir una Pelicula</a>
+                              <li><a href="anyadir_pelicula.php">Añadir una Pelicula</a>
                               </li>
                            </ul>
                         </li>
@@ -89,29 +89,29 @@
                   </div>
                   <ul class="s-12 l-2">
                      <li class="logo hide-s hide-m">
-                        <a href="../AppWebBBDD/index.php"><strong>DMB</strong><br/></a>
+                        <a href="../index.php"><strong>DMB</strong><br/></a>
                      </li>
                   </ul>
                   <div class="top-nav s-12 l-5">
                      <ul class="top-ul chevron">
-                        <li><a href="../AppWebBBDD/catalog.php">Catalogo</a>
+                        <li><a href="../catalog.php">Catalogo</a>
                         </li>
                         <li>
                            <a>BBDD</a>			    
                            <ul>
-                              <li><a href="bbdd/crearBD.php">Crear Base de Datos</a>
+                              <li><a href="crearBD.php">Crear Base de Datos</a>
                               </li>
                               <li><a href="javascript:eliminarBD()">Borrar Base de Datos</a>
                               </li>
-                              <li><a href="bbdd/crearTablasBD.php">Crear una lista</a>
+                              <li><a href="crearTablasBD.php">Crear una lista</a>
                               </li>
                               <li><a href="javascript:eliminarLista()">Borrar una lista</a>
                               </li>
-                              <li><a href="caracteristics.php">Caracteristicas</a>
+                              <li><a href="../caracteristics.php">Caracteristicas</a>
                               </li>
                            </ul>
                         </li>
-                        <li><a href="contact.php">Contacto</a>
+                        <li><a href="../contact.php">Contacto</a>
                         </li>
                      </ul> 
                   </div>
@@ -122,54 +122,60 @@
       <section>
          <div id="head">
             <div class="line">
-               <h1>Catalogo Interactivo</h1>
+               <h1>Mis Peliculas</h1>
             </div>
          </div>
          <div id="content">
-            <div class="line">
-               <div class="margin">
-                   <div class="s-12 m-6 l-4">
-                      <img src="img/Breaking-Bad.jpg" alt="alternative text">    
-                     <p class="subtitile">Galardona serie que cuenta la entrada al mundo de las drogas de Walter White.
-                     </p>
-                   </div>
-                   <div class="s-12 m-6 l-4">
-                      <img src="img/Death-Note.jpg" alt="alternative text">      
-                     <p class="subtitile">Anime que se basa en un cuaderno que causa la muerte de la persona cuyo nombre se escribe en el.
-                     </p>
-                   </div>
-                   <div class="s-12 m-6 l-4">
-                      <img src="img/Santa-Clarita-Diet.jpg" alt="alternative text">      
-                     <p class="subtitile">Historia sobre una familia cuya madre necesita comer cuerpos humanos.
-                     </p>
-                   </div>
-                   <div class="s-12 m-6 l-4">
-                       <img src="img/Stranger-Things.jpg" alt="alternative text">      
-                     <p class="subtitile">Cuenta la desaparición de Will Myers en esta serie sobre extraños sucesos.
-                     </p>
-                   </div>
-                   <div class="s-12 m-6 l-4">
-                      <img src="img/Dr-House.jpg">      
-                      <p class="subtitile">Serie que sigue los casos que trata el excentrico Dr. House.
-                      </p>
-                   </div>
-                   <div class="s-12 m-6 l-4">
-                      <img src="img/v-de-vendetta.jpg">  
-                      <p class="subtitile">Narra la historia de V, quien quiere completar la tarea de Guy Fawkes de destruir el parlamento.
-                      </p>
-                   </div>
-                   <div class="s-12 m-6 l-4">
-                      <img src="img/Narcos.jpg">      
-                      <p class="subtitile">Serie original de Netflix que trata el ascenso y caida del famoso narcotraficante colombiano Pablo Escobar.
-                      </p>
-                   </div>
-                   <div class="s-12 m-6 l-4">
-                      <img src="img/John-Wick.jpg">      
-                      <p class="subtitile">Pelicula sobre un ex-sicario profesional que vuelve al trabajo cuando, al morir su mujer, unos gangsters rusos matan a su perro y le roban el coche.
-                      </p>
-                   </div>
-               </div>
-            </div>
+
+            <?php
+               require("conectarBD.php");
+
+               $select = "SELECT nombre,temporadas,estreno FROM series";
+               $result = mysqli_query($conectar,$select);
+
+               ?>
+
+                <p>Selecciona la Serie que quieres modificar:</p>
+                     <p>Serie:
+
+               <select>
+
+                 <option value="0">Selección:</option>
+
+                 <?php
+                                       
+                   $query = "SELECT nombre FROM series";
+                                          
+                   while ($valores = mysqli_fetch_array($query)) {
+
+                                             
+                     echo '<option value="'.$valores["nombre"].'</option>';
+                                                
+                   }
+                 ?>
+               </select>
+               <form action="modificar_serie.php" method="post">
+               <p>
+                  Introduce los cambios a realizar:
+               </p>
+               <p>
+                <label for="textfield">Nombre</label>
+                <input type="text" name="nom" id="nom" />
+                <label for="textarea"></label>
+              </p>
+              <p>
+                <label for="textfield">Temporadas</label>
+                <input type="number" name="temp" id="temp" />
+                <label for="textarea"></label>
+              </p>
+              <p>
+                <label for="textfield"> Año de estreno</label>
+                <input type="text" name="est" id="est" />
+                <label for="textarea"></label>
+              </p>
+               <input type="Submit" value="Actualizar">
+               </form>
+            
          </div>
          <div id="fourth-block">
             <div class="line">
@@ -203,7 +209,7 @@
             </div>
          </div>
       </footer>
-      <script type="text/javascript" src="owl-carousel/owl.carousel.js"></script>   
+      <script type="text/javascript" src="../owl-carousel/owl.carousel.js"></script>   
       <script type="text/javascript">
          jQuery(document).ready(function($) {  
            $("#owl-demo").owlCarousel({

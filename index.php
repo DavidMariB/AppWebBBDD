@@ -2,6 +2,7 @@
 <!DOCTYPE html>
 <html lang="en-US">
    <head>
+      <!--Importamos estilos-->
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width" />
       <title>DMB - ASISTENTE PARA ADMINISTRAR SUS PELICULAS Y SERIES</title>
@@ -17,6 +18,7 @@
       <script type="text/javascript" src="js/modernizr.js"></script>
       <script type="text/javascript" src="js/responsee.js"></script>
 
+      <!--Creamos el script que pedira la confirmacion para borrar la Base de Datos-->
       <script type="text/javascript"> 
          function eliminarBD(){ 
          confirmar=confirm("¿Seguro que quieres borrar la base de datos?"); 
@@ -32,6 +34,7 @@
          } 
       </script>
 
+      <!--Creamos el script que pedira la confirmacion para borrar la Lista-->
       <script type="text/javascript"> 
          function eliminarLista(){ 
          confirmar=confirm("¿Seguro que quieres borrar tu lista?"); 
@@ -72,6 +75,8 @@
                               <li><a href="bbdd/listado_series.php">Mis Series</a>
                               </li>
                               <li><a href="bbdd/anyadir_serie.php">Añadir una serie</a>
+                              </li>
+                              <li><a href="bbdd/formulario_modificar_series.php"> Modificar mis series</a>
                               </li>
                            </ul>
                         </li>

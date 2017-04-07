@@ -72,6 +72,8 @@
                               </li>
                               <li><a href="anyadir_serie.php">Añadir una serie</a>
                               </li>
+                              <li><a href="formulario_modificar_series.php"> Modificar mis series</a>
+                              </li>
                            </ul>
                         </li>
                         <li>
