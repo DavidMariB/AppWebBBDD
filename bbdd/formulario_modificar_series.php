@@ -122,7 +122,7 @@
       <section>
          <div id="head">
             <div class="line">
-               <h1>Mis Peliculas</h1>
+               <h1>Modificar Serie</h1>
             </div>
          </div>
          <div id="content">
@@ -130,29 +130,33 @@
             <?php
                require("conectarBD.php");
 
-               $select = "SELECT nombre,temporadas,estreno FROM series";
-               $result = mysqli_query($conectar,$select);
+               $select = "SELECT id_serie, nombre FROM series";
+
+               $result = $conectar->query($select);
+
+               
 
                ?>
 
-                <p>Selecciona la Serie que quieres modificar:</p>
-                     <p>Serie:
+               Selecciona la serie que quieres modificar:
+               
+               <br>
 
                <select>
 
-                 <option value="0">Selección:</option>
+                   <?php    
+                   while ( $row = $result->fetch_array() )    
+                   {
+                       ?>
+                   
+                       <option value=" <?php echo $row['id_serie'] ?> " >
+                       <?php echo $row['nombre']; ?>
+                       </option>
+                       
+                       <?php
+                   }    
+                   ?>
 
-                 <?php
-                                       
-                   $query = "SELECT nombre FROM series";
-                                          
-                   while ($valores = mysqli_fetch_array($query)) {
-
-                                             
-                     echo '<option value="'.$valores["nombre"].'</option>';
-                                                
-                   }
-                 ?>
                </select>
                <form action="modificar_serie.php" method="post">
                <p>
