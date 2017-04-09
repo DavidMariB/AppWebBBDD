@@ -83,6 +83,8 @@
                               </li>
                               <li><a href="anyadir_pelicula.php">Añadir una Pelicula</a>
                               </li>
+                              <li><a href="formulario_modificar_peli.php">Modificar mis peliculas</a>
+                              </li>
                            </ul>
                         </li>
                      </ul>
@@ -131,10 +133,7 @@
                require("conectarBD.php");
 
                $select = "SELECT id_serie, nombre FROM series";
-
                $result = $conectar->query($select);
-
-               
 
                ?>
 
@@ -142,7 +141,10 @@
                
                <br>
 
-               <select>
+               
+               <form action="modificar_serie.php" method="post">
+
+                  <select name="selec_serie">
 
                    <?php    
                    while ( $row = $result->fetch_array() )    
@@ -157,27 +159,26 @@
                    }    
                    ?>
 
-               </select>
-               <form action="modificar_serie.php" method="post">
-               <p>
-                  Introduce los cambios a realizar:
-               </p>
-               <p>
-                <label for="textfield">Nombre</label>
-                <input type="text" name="nom" id="nom" />
-                <label for="textarea"></label>
-              </p>
-              <p>
-                <label for="textfield">Temporadas</label>
-                <input type="number" name="temp" id="temp" />
-                <label for="textarea"></label>
-              </p>
-              <p>
-                <label for="textfield"> Año de estreno</label>
-                <input type="text" name="est" id="est" />
-                <label for="textarea"></label>
-              </p>
-               <input type="Submit" value="Actualizar">
+                  </select>
+                  <p>
+                     Introduce los cambios a realizar:
+                  </p>
+                  <p>
+                   <label for="textfield">Nombre</label>
+                   <input type="text" name="nom" id="nom" />
+                   <label for="textarea"></label>
+                 </p>
+                 <p>
+                   <label for="textfield">Temporadas</label>
+                   <input type="number" name="temp" id="temp" />
+                   <label for="textarea"></label>
+                 </p>
+                 <p>
+                   <label for="textfield"> Año de estreno</label>
+                   <input type="text" name="est" id="est" />
+                   <label for="textarea"></label>
+                 </p>
+                  <input type="Submit" value="Actualizar">
                </form>
             
          </div>

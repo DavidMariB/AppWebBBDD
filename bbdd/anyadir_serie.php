@@ -83,6 +83,8 @@
                               </li>
                               <li><a href="anyadir_pelicula.php">Añadir una Pelicula</a>
                               </li>
+                              <li><a href="bbdd/formulario_modificar_peli.php">Modificar mis peliculas</a>
+                              </li>
                            </ul>
                         </li>
                      </ul>

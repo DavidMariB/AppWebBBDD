@@ -1,12 +1,12 @@
 <?php
  require("conectarBD.php");
  
- $name = $_POST['selec_serie'];
+ $name = $_POST['selec_peli'];
  $nombre = $_POST["nom"];
  $temp = $_POST["temp"];
  $est = $_POST["est"];
 
- $query="UPDATE series SET nombre = $nombre, temporadas = $temp, estreno= $est WHERE id_serie = $name";
+ $query="UPDATE peliculas SET nombre = $nombre, temporadas = $temp, estreno= $est WHERE id_serie = $name";
 
 
  mysqli_query($conectar,$query);

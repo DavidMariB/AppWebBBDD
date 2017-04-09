@@ -3,18 +3,18 @@
    <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width" />
-      <title>DMB - PAGINA DE CONTACTO</title>
-      <link rel="stylesheet" href="css/components.css">
-      <link rel="stylesheet" href="css/responsee.css">
-      <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
-      <link rel="stylesheet" href="owl-carousel/owl.theme.css">
+      <title>DMB - CATALOGO DE SERIES Y PELICULAS</title>
+      <link rel="stylesheet" href="../css/components.css">
+      <link rel="stylesheet" href="../css/responsee.css">
+      <link rel="stylesheet" href="../owl-carousel/owl.carousel.css">
+      <link rel="stylesheet" href="../owl-carousel/owl.theme.css">
       <!-- Personalizacion -->  
-      <link rel="stylesheet" href="css/template-style.css">
+      <link rel="stylesheet" href="../css/template-style.css">
       <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-      <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
-      <script type="text/javascript" src="js/jquery-ui.min.js"></script>    
-      <script type="text/javascript" src="js/modernizr.js"></script>
-      <script type="text/javascript" src="js/responsee.js"></script>   
+      <script type="text/javascript" src="../js/jquery-1.8.3.min.js"></script>
+      <script type="text/javascript" src="../js/jquery-ui.min.js"></script>    
+      <script type="text/javascript" src="../js/modernizr.js"></script>
+      <script type="text/javascript" src="../js/responsee.js"></script>
 
       <script type="text/javascript"> 
          function eliminarBD(){ 
@@ -22,7 +22,7 @@
          if (confirmar){
          // si pulsamos en aceptar
          alert('La Base de Datos se borrara a continuacion');
-            document.location.href = "bbdd/eliminarBD.php";
+            document.location.href = "eliminarBD.php";
          }else {
          // si pulsamos en cancelar
          alert('La Base de Datos no se borrara');
@@ -37,7 +37,7 @@
          if (confirmar){
          // si pulsamos en aceptar
          alert('La Lista se borrara a continuacion');
-            document.location.href = "bbdd/eliminarTablasBD.php";
+            document.location.href = "eliminarTablasBD.php";
          }else {
          // si pulsamos en cancelar
          alert('La Lista no se borrara');
@@ -49,41 +49,41 @@
       <!--[if lt IE 9]>
 	      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
-      <![endif]-->
+      <![endif]--> 
    </head>
    <body class="size-1140">
-      <!-- Barar de Navegacion -->  
+      <!-- Barra de Navegacion -->  
       <header>
          <nav>
             <div class="line">
                <div class="top-nav">              
                   <div class="logo hide-l">
-                     <a href="../design/"> <br /><strong></strong></a>
+                     <a><br /><strong></strong></a>
                   </div>                  
                   <p class="nav-text"></p>
                   <div class="top-nav s-12 l-5">
                      <ul class="right top-ul chevron">
-                        <li><a href="../AppWebBBDD/index.php">INICIO</a>
+                        <li><a href="../index.php">Inicio</a>
                         </li>
                         <li>
                            <a>Series</a>          
                            <ul>
-                              <li><a href="bbdd/listado_series.php">Mis Series</a>
+                              <li><a href="listado_series.php">Mis Series</a>
                               </li>
-                              <li><a href="bbdd/anyadir_serie.php">Añadir una serie</a>
+                              <li><a href="anyadir_serie.php">Añadir una serie</a>
                               </li>
-                              <li><a href="bbdd/formulario_modificar_series.php"> Modificar mis series</a>
+                              <li><a href="formulario_modificar_series.php"> Modificar mis series</a>
                               </li>
                            </ul>
                         </li>
                         <li>
                            <a>Peliculas</a>          
                            <ul>
-                              <li><a href="bbdd/listado_peliculas.php">Mis Peliculas</a>
+                              <li><a href="listado_peliculas.php">Mis Peliculas</a>
                               </li>
-                              <li><a href="bbdd/anyadir_pelicula.php">Añadir una Pelicula</a>
+                              <li><a href="anyadir_pelicula.php">Añadir una Pelicula</a>
                               </li>
-                              <li><a href="bbdd/formulario_modificar_peli.php">Modificar mis peliculas</a>
+                              <li><a href="formulario_modificar_pelis.php">Modificar mis Peliculas</a>
                               </li>
                            </ul>
                         </li>
@@ -91,29 +91,29 @@
                   </div>
                   <ul class="s-12 l-2">
                      <li class="logo hide-s hide-m">
-                        <a href="../AppWebBBDD/index.php"><strong>DMB</strong><br/></a>
+                        <a href="../index.php"><strong>DMB</strong><br/></a>
                      </li>
                   </ul>
                   <div class="top-nav s-12 l-5">
                      <ul class="top-ul chevron">
-                        <li><a href="../AppWebBBDD/catalog.php">Catalogo</a>
+                        <li><a href="../catalog.php">Catalogo</a>
                         </li>
                         <li>
                            <a>BBDD</a>			    
                            <ul>
-                              <li><a href="bbdd/crearBD.php">Crear Base de Datos</a>
+                              <li><a href="crearBD.php">Crear Base de Datos</a>
                               </li>
                               <li><a href="javascript:eliminarBD()">Borrar Base de Datos</a>
                               </li>
-                              <li><a href="bbdd/crearTablasBD.php">Crear una Lista</a>
+                              <li><a href="crearTablasBD.php">Crear una lista</a>
                               </li>
-                              <li><a href="javascript:eliminarLista()">Borrar una Lista</a>
+                              <li><a href="javascript:eliminarLista()">Borrar una lista</a>
                               </li>
-                              <li><a href="caracteristics.php">Caracteristicas</a>
+                              <li><a href="../caracteristics.php">Caracteristicas</a>
                               </li>
                            </ul>
                         </li>
-                        <li><a href="contact.php">CONTACTO</a>
+                        <li><a href="../contact.php">Contacto</a>
                         </li>
                      </ul> 
                   </div>
@@ -124,35 +124,63 @@
       <section>
          <div id="head">
             <div class="line">
-               <h1>PÁGINA DE CONTACTO</h1>
+               <h1>Modificar Pelicula</h1>
             </div>
          </div>
-         <div id="content" class="left-align contact-page">
-            <div class="line">
-               <div class="margin">
-                  <div class="s-12 l-6">
-                     <h2>Detalles de Contacto</h2>
-                     <address>
-                        <p><i class="icon-home icon"></i> Florida Universitaria, Catarroja</p>
-                        <p><i class="icon-globe_black icon"></i> Valencia - España</p>
-                        <p><i class="icon-mail icon"></i> decdam@mail.com</p>
-                     </address>
-                     <br />
-                     <h2>Redes Sociales</h2>
-                     <p><i class="icon-facebook icon"></i> DecDam</a></p>
-                     <p><i class="icon-twitter icon"></i> @DecDam</a></p>
-                  </div>
-                  <div class="s-12 l-6">
-                     <h2>Formulario de contacto (no funciona)</h2>
-                     <form class="customform" action="">
-                        <div class="s-12 l-7"><input name="" placeholder="Correo" title="Your e-mail" type="text" /></div>
-                        <div class="s-12 l-7"><input name="" placeholder="Nombre" title="Your name" type="text" /></div>
-                        <div class="s-12"><textarea placeholder="Mensaje" name="" rows="5"></textarea></div>
-                        <div class="s-12 m-6 l-4"><button type="submit">Enviar</button></div>
-                     </form>
-                  </div>
-               </div>
-            </div>
+         <div id="content">
+
+            <?php
+               require("conectarBD.php");
+
+               $select = "SELECT id_pelicula, nombre FROM peliculas";
+               $result = $conectar->query($select);
+
+               ?>
+
+               Selecciona la pelicula que quieres modificar:
+               
+               <br>
+
+               
+               <form action="modificar_pelicula.php" method="post">
+
+                  <select name="selec_peli">
+
+                   <?php    
+                   while ( $row = $result->fetch_array() )    
+                   {
+                       ?>
+                   
+                       <option value=" <?php echo $row['id_pelicula'] ?> " >
+                       <?php echo $row['nombre']; ?>
+                       </option>
+                       
+                       <?php
+                   }    
+                   ?>
+
+                  </select>
+                  <p>
+                     Introduce los cambios a realizar:
+                  </p>
+                  <p>
+                   <label for="textfield">Nombre</label>
+                   <input type="text" name="nom" id="nom" />
+                   <label for="textarea"></label>
+                 </p>
+                 <p>
+                   <label for="textfield">Temporadas</label>
+                   <input type="number" name="temp" id="temp" />
+                   <label for="textarea"></label>
+                 </p>
+                 <p>
+                   <label for="textfield"> Año de estreno</label>
+                   <input type="text" name="est" id="est" />
+                   <label for="textarea"></label>
+                 </p>
+                  <input type="Submit" value="Actualizar">
+               </form>
+            
          </div>
          <div id="fourth-block">
             <div class="line">
@@ -186,7 +214,7 @@
             </div>
          </div>
       </footer>
-      <script type="text/javascript" src="owl-carousel/owl.carousel.js"></script>   
+      <script type="text/javascript" src="../owl-carousel/owl.carousel.js"></script>   
       <script type="text/javascript">
          jQuery(document).ready(function($) {  
            $("#owl-demo").owlCarousel({
