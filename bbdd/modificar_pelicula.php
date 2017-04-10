@@ -3,20 +3,17 @@
  
  $name = $_POST['selec_peli'];
  $nombre = $_POST["nom"];
- $temp = $_POST["temp"];
+ $dir = $_POST["dir"];
  $est = $_POST["est"];
 
- $query="UPDATE peliculas SET nombre = $nombre, temporadas = $temp, estreno= $est WHERE id_serie = $name";
+ $stmt = $conectar->prepare("UPDATE series SET nombre = ?, director = ?, estreno = ? WHERE id_pelicula = ?");
+ $stmt->bind_param('ssii',$nombre,$dir,$est,$name);
+ 
 
-
- mysqli_query($conectar,$query);
-
-	 if(mysqli_affected_rows()>=0){
-	echo "<p>($nombre) Datos Actualizados<p>";
+	 if($stmt->execute()){
+		echo "<p>($nombre) Datos Actualizados<p>";
+		header("Location: listado_peliculas.php");
 	 }else{
 	echo "<p>($nombre) No se ha podido actualizar en estos momentos<p>";
 	 }
-
-
-	header("Location: ../index.php");
 ?>

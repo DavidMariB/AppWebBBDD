@@ -1,22 +1,22 @@
 <?php
  require("conectarBD.php");
- 
+
  $name = $_POST['selec_serie'];
  $nombre = $_POST["nom"];
  $temp = $_POST["temp"];
  $est = $_POST["est"];
 
- $query="UPDATE series SET nombre = $nombre, temporadas = $temp, estreno= $est WHERE id_serie = $name";
+ $stmt = $conectar->prepare("UPDATE series SET nombre = ?, temporadas = ?, lanzamiento = ? WHERE id_serie = ?");
+ $stmt->bind_param('siii',$nombre,$temp,$est,$name);
+ 
 
-
- mysqli_query($conectar,$query);
-
-	 if(mysqli_affected_rows()>=0){
-	echo "<p>($nombre) Datos Actualizados<p>";
+	 if($stmt->execute()){
+		echo "<p>($nombre) Datos Actualizados<p>";
+		header("Location: listado_series.php");
 	 }else{
 	echo "<p>($nombre) No se ha podido actualizar en estos momentos<p>";
 	 }
 
 
-	header("Location: ../index.php");
+	
 ?>

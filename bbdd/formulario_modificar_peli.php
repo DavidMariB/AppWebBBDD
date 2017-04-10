@@ -169,8 +169,8 @@
                    <label for="textarea"></label>
                  </p>
                  <p>
-                   <label for="textfield">Temporadas</label>
-                   <input type="number" name="temp" id="temp" />
+                   <label for="textfield">Director</label>
+                   <input type="text" name="dir" id="dir" />
                    <label for="textarea"></label>
                  </p>
                  <p>

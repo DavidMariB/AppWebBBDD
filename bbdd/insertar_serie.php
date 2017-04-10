@@ -9,5 +9,5 @@ if (!mysqli_query($conectar, $insertar)){
 	die ("No se ha podido añadir la serie");
 }
 
-header("Location: ../index.php");
+header("Location: listado_series.php");
 ?>
