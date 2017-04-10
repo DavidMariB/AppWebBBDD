@@ -74,6 +74,8 @@
                               </li>
                               <li><a href="bbdd/formulario_modificar_series.php"> Modificar mis series</a>
                               </li>
+                              <li><a href="bbdd/formulario_eliminar_serie.php"> Eliminar una Serie</a>
+                              </li>
                            </ul>
                         </li>
                         <li>
@@ -84,6 +86,8 @@
                               <li><a href="bbdd/anyadir_pelicula.php">Añadir una Pelicula</a>
                               </li>
                               <li><a href="bbdd/formulario_modificar_peli.php">Modificar mis peliculas</a>
+                              </li>
+                              <li><a href="bbdd/formulario_eliminar_serie.php">Eliminar una Pelicula</a>
                               </li>
                            </ul>
                         </li>

@@ -6,7 +6,6 @@
 	$consulta="CREATE TABLE IF NOT EXISTS series ";
 	$consulta.="( id_serie INT NOT NULL AUTO_INCREMENT, ";
 	$consulta.="nombre CHAR(140) NOT NULL, ";
-	$consulta.="director CHAR(140), ";
 	$consulta.="lanzamiento INT, ";
 	$consulta.="temporadas INT NOT NULL, ";
 	$consulta.="PRIMARY KEY (id_serie));";

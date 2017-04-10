@@ -1,4 +1,4 @@
-<DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en-US">
    <head>
       <meta charset="UTF-8">
@@ -14,7 +14,7 @@
       <script type="text/javascript" src="../js/jquery-1.8.3.min.js"></script>
       <script type="text/javascript" src="../js/jquery-ui.min.js"></script>    
       <script type="text/javascript" src="../js/modernizr.js"></script>
-      <script type="text/javascript" src="../js/responsee.js"></script> 
+      <script type="text/javascript" src="../js/responsee.js"></script>
 
       <script type="text/javascript"> 
          function eliminarBD(){ 
@@ -47,7 +47,7 @@
       </script>
 
       <!--[if lt IE 9]>
-        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
       <![endif]--> 
    </head>
@@ -63,10 +63,10 @@
                   <p class="nav-text"></p>
                   <div class="top-nav s-12 l-5">
                      <ul class="right top-ul chevron">
-                        <li><a href="index.php">Inicio</a>
+                        <li><a href="../index.php">Inicio</a>
                         </li>
                         <li>
-                           <a>Series</a> 
+                           <a>Series</a>          
                            <ul>
                               <li><a href="listado_series.php">Mis Series</a>
                               </li>
@@ -85,7 +85,7 @@
                               </li>
                               <li><a href="anyadir_pelicula.php">Añadir una Pelicula</a>
                               </li>
-                              <li><a href="formulario_modificar_peli.php">Modificar mis peliculas</a>
+                              <li><a href="formulario_modificar_peli.php">Modificar mis Peliculas</a>
                               </li>
                               <li><a href="formulario_eliminar_pelicula.php"> Eliminar una Pelicula</a>
                               </li>
@@ -103,7 +103,7 @@
                         <li><a href="../catalog.php">Catalogo</a>
                         </li>
                         <li>
-                           <a>BBDD</a>          
+                           <a>BBDD</a>			    
                            <ul>
                               <li><a href="crearBD.php">Crear Base de Datos</a>
                               </li>
@@ -113,7 +113,7 @@
                               </li>
                               <li><a href="javascript:eliminarLista()">Borrar una lista</a>
                               </li>
-                              <li><a href="caracteristics.php">Caracteristicas</a>
+                              <li><a href="../caracteristics.php">Caracteristicas</a>
                               </li>
                            </ul>
                         </li>
@@ -126,53 +126,64 @@
          </nav>
       </header>
       <section>
-        <div id="head">
-          <div class="line">
-            <h1>Formulario para añadir una Pelicula </h1>
-          </div>
-        </div>
-        <div id="content">
-          <div class="line">
-            <div class="margin">
-              <form class="myform" id="form1" name="form1" method="post" action="insertar_peliculas.php">
-              <p>
-                <label for="textfield">Nombre</label>
-                <input type="text" name="nombre" id="nombre" />
-                <label for="textarea"></label>
-              </p>
-              <p>
-                <label for="textfield">Director</label>
-                <input type="text" name="dir" id="dir" />
-                <label for="textarea"></label>
-              </p>
-              <p>
-                <label for="textfield"> Año de estreno</label>
-                <input type="number" name="estreno" id="estreno" />
-                <label for="textarea"></label>
-              </p>
-                <input name="enviar" type="submit" value="Añadir" />
-              </p>
-            </form>
+         <div id="head">
+            <div class="line">
+               <h1>Eliminar Serie</h1>
             </div>
-         </div> 
-        </div>
-        <div id="Layer2">
-            <div id="fourth-block">
-              <div class="line">
-                <div id="owl-demo2" class="owl-carousel owl-theme">
+         </div>
+         <div id="content">
+
+            <?php
+               require("conectarBD.php");
+
+               $select = "SELECT id_serie, nombre FROM series";
+               $result = $conectar->query($select);
+
+               ?>
+
+               Selecciona la serie que quieres eliminar:
+               
+               <br>
+
+               
+               <form action="eliminar_serie.php" method="post">
+
+                  <select name="selec_serie">
+
+                   <?php    
+                   while ( $row = $result->fetch_array() )    
+                   {
+                       ?>
+                   
+                       <option value=" <?php echo $row['id_serie'] ?> " >
+                       <?php echo $row['nombre']; ?>
+                       </option>
+                       
+                       <?php
+                   }    
+                   ?>
+
+                  </select>
+                  <input type="Submit" value="Eliminar">
+               </form>
+         </div>
+         <div id="fourth-block">
+            <div class="line">
+               <div id="owl-demo2" class="owl-carousel owl-theme">
                   <div class="item">
-                    <h2>Asistente para Peliculas y Series</h2>
-                      <p class="s-12 m-12 l-8 center">Esta pagina esta diseñada para poder administrar las series y peliculas que hayas visto y/o estes viendo, y así puedas llevar un  seguimiento de estas para no perderte ningún capitulo.
-                      </p>
-                        </div>
-                          <div class="item">
-                             <h2>Contenido Legal</h2>
-                             <p class="s-12 m-12 l-8 center">Esta pagina tan solo realiza un seguimiento de las Series y Peliculas que tu indiques, pero no incluye ningún link a ninguna pagina eterna o archivo e video para visualizar este contenido de manera ilegal.
-                             </p>
-                          </div>
-                       </div>
-                    </div>
-                 </div>
+                     <h2>Asistente para Peliculas y Series</h2>
+                     <p class="s-12 m-12 l-8 center">Esta pagina esta diseñada para poder administrar las series y peliculas que hayas visto y/o estes viendo, y así puedas llevar un seguimiento de estas
+                     para no perderte ningún capitulo.
+                     </p>
+                  </div>
+                  <div class="item">
+                     <h2>Contenido Legal</h2>
+                     <p class="s-12 m-12 l-8 center">Esta pagina tan solo realiza un seguimiento de las Series y Peliculas que tu indiques, pero no incluye ningún link a ninguna pagina eterna o archivo e video para visualizar este contenido de manera ilegal.
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
       </section>
       <!-- FOOTER -->   
       <footer>
@@ -192,25 +203,21 @@
       <script type="text/javascript">
          jQuery(document).ready(function($) {  
            $("#owl-demo").owlCarousel({
-          slideSpeed : 300,
-          autoPlay : true,
-          navigation : false,
-          pagination : false,
-          singleItem:true
+         	slideSpeed : 300,
+         	autoPlay : true,
+         	navigation : false,
+         	pagination : false,
+         	singleItem:true
            });
            $("#owl-demo2").owlCarousel({
-          slideSpeed : 300,
-          autoPlay : true,
-          navigation : false,
-          pagination : true,
-          singleItem:true
+         	slideSpeed : 300,
+         	autoPlay : true,
+         	navigation : false,
+         	pagination : true,
+         	singleItem:true
            });
-         });  
+         });	
           
       </script> 
    </body>
-</html>
-
-
-</body>
 </html>

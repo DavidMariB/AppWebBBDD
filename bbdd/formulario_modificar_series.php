@@ -74,6 +74,8 @@
                               </li>
                               <li><a href="formulario_modificar_series.php"> Modificar mis series</a>
                               </li>
+                              <li><a href="formulario_eliminar_serie.php"> Eliminar una Serie</a>
+                              </li>
                            </ul>
                         </li>
                         <li>
@@ -84,6 +86,8 @@
                               <li><a href="anyadir_pelicula.php">Añadir una Pelicula</a>
                               </li>
                               <li><a href="formulario_modificar_peli.php">Modificar mis peliculas</a>
+                              </li>
+                              <li><a href="formulario_eliminar_pelicula.php"> Eliminar una Pelicula</a>
                               </li>
                            </ul>
                         </li>
@@ -161,7 +165,7 @@
 
                   </select>
                   <p>
-                     Introduce los cambios a realizar:
+                     Introduce los cambios a realizar (Se deben rellenar los 3 campos):
                   </p>
                   <p>
                    <label for="textfield">Nombre</label>
